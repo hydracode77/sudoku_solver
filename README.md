@@ -1,5 +1,5 @@
 # Sudoku Solver
-![Sudoku_Bild](https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/1024px-Sudoku-by-L2G-20050714.svg.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/1024px-Sudoku-by-L2G-20050714.svg.png" alt="Sudoku_Bild" width="200" height="200">
 
 ## Was ist "Sodoku"?
 [Wikipedia - Sudoku](https://de.wikipedia.org/wiki/Sudoku)
