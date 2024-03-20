@@ -1,10 +1,13 @@
 # Sudoku Solver
 
+## Was ist "Sodoku"?
+[Wikipedia - Sudoku](https://de.wikipedia.org/wiki/Sudoku)
+
 Ein Projekt zum Lösen von einfachen Sudoku-Problemen.
 Die Zahlen werden eingetragen, Null steht für ein Leeres Feld. Anschließend wird das Programm gesartet und der Algorythmus findet passende Zahlen, füllt damit die Lücken und stellt das Sudoku bestmöglich fertig.
 
 So funtioniert der Algorythmus:
-[Wikipedia](www.wikipedia.com)
+
 
 
 Ausstehende Verbesserungsmöglichkeiten:
