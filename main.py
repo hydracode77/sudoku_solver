@@ -11,7 +11,7 @@ rare_rows_list = [[5, 0, 4, 6, 7, 0, 9, 0, 2],
 
 old_missing_fields_num = 1000
 missing_fields_num = 999
-final_solved_list = rare_rows_list  # anfangs ist es nur die bloße vorlage
+final_solved_list = rare_rows_list  # anfangs bloße vorlage
 
 def count_empty_fields(sudoku_game_field):
     number_of_zeros = 0
@@ -43,12 +43,12 @@ def turn_rows_in_boxes(rows_list):
     boxes_list = [] # mit unterlisten
 
     for e in range(0, 3):
-        for i in range(0 + e * 3, 3 + e * 3):  # schwierige formel, denk kurz nach, ist easy (mit jedem e durchlauf werden 3 boxen horizontal gemacht)
-            loose_boxes_list.append(rows_list[i][0:3])  # erste box
         for i in range(0 + e * 3, 3 + e * 3):
-            loose_boxes_list.append(rows_list[i][3:6])  # zweite box
+            loose_boxes_list.append(rows_list[i][0:3])  # erste boxreihe
         for i in range(0 + e * 3, 3 + e * 3):
-            loose_boxes_list.append(rows_list[i][6:9])  # dritte box
+            loose_boxes_list.append(rows_list[i][3:6])  # zweite boxreihe
+        for i in range(0 + e * 3, 3 + e * 3):
+            loose_boxes_list.append(rows_list[i][6:9])  # dritte boxreihe
 
     loose_boxes_list = list(flatten(loose_boxes_list))  # Unterlisten auflösen
 
@@ -57,7 +57,7 @@ def turn_rows_in_boxes(rows_list):
 
     return boxes_list
 
-def find_missing_one(uncomplete_list): # row num geg?
+def find_missing_one(uncomplete_list):
     for row_num in range(0, 9):
         if uncomplete_list[row_num].count(0) == 1:  # checken, ob wirklich nur eine zahl fehlt
             num_missing = None
