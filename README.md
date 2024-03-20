@@ -1,4 +1,4 @@
-# sudoku_solver
+# Sudoku Solver
 
 Ein Projekt zum Lösen von einfachen Sudoku-Problemen.
 Die Zahlen werden eingetragen, Null steht für ein Leeres Feld. Anschließend wird das Programm gesartet und der Algorythmus findet passende Zahlen, füllt damit die Lücken und stellt das Sudoku bestmöglich fertig.
